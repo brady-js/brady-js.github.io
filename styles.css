@@ -1,0 +1,157 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome-section {
+  background: linear-gradient(45deg, rgb(61, 61, 61), black);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.5px;
+  color: white;
+  font-size: 4rem;
+}
+
+.header-p {
+  color: crimson;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: crimson;
+  top: 0;
+  border-bottom: 2px solid black;
+}
+
+.nav-list {
+  list-style: none;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: rgb(61, 61, 61);
+  border: 1px solid black;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(38, 57, 94);
+  border: 2px solid black;
+}
+
+.projects-header {
+  color: white;
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-style: double;
+  font-size: 2rem;
+}
+
+.project-tile {
+  max-width: 1000px;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title {
+  color: white;
+}
+.project-img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  background-color: rgb(61, 61, 61);
+}
+
+.contact-header {
+  color: white;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+}
+
+.contact-list {
+  list-style: none;
+  display: flex;
+  width: 250px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(45deg, rgb(61, 61, 61), black);
+  border-top: 2px solid crimson;
+  color: white;
+}
+
+.footer-p {
+  padding-right: 75px;
+}
+
+@media screen only and (max-width: 1000px) {
+  .project-tile {
+    max-width: 800px;
+    max-height: 800px;
+  }
+}
